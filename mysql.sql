@@ -4,3 +4,5 @@ COUNTRY_NAME varchar(40)
 CHECK(COUNTRY_NAME IN('Italy','India','China')) ,
 REGION_ID decimal(10,0)
 );
+CREATE TABLE IF NOT EXISTS dup_countries
+AS SELECT * FROM  countries;
